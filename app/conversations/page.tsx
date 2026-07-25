@@ -31,6 +31,8 @@ export default function Conversations() {
           <a href="/" style={{ color: 'white', textDecoration: 'none' }}>Home</a>
           <a href="/dashboard" style={{ color: 'white', textDecoration: 'none' }}>Dashboard</a>
           <a href="/catalog" style={{ color: 'white', textDecoration: 'none' }}>Catalog</a>
+          <a href="/orders" style={{ color: 'white', textDecoration: 'none' }}>Orders</a>
+          <a href="/settings" style={{ color: 'white', textDecoration: 'none' }}>Settings</a>
         </nav>
       </header>
 
@@ -40,7 +42,11 @@ export default function Conversations() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           {chats.map((c) => (
-            <div key={c.id} style={{ border: '1px solid #e5e7eb', borderRadius: '12px', padding: '20px' }}>
+            <a
+              key={c.id}
+              href={`/conversations/${c.id}`}
+              style={{ border: '1px solid #e5e7eb', borderRadius: '12px', padding: '20px', textDecoration: 'none', color: 'inherit', display: 'block' }}
+            >
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
                 <strong>{c.customer}</strong>
                 <span style={{ fontSize: '14px', color: '#666' }}>{c.time}</span>
@@ -67,7 +73,7 @@ export default function Conversations() {
               >
                 {c.status}
               </span>
-            </div>
+            </a>
           ))}
         </div>
       </main>
