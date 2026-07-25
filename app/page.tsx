@@ -1,12 +1,12 @@
 export default function Home() {
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', margin: 0 }}>
-      <header style={{ background: '#15803d', color: 'white', padding: '16px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <header style={{ background: '#15803d', color: 'white', padding: '16px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <h1 style={{ margin: 0, fontSize: '24px' }}>Tajer AI</h1>
-        <nav style={{ display: 'flex', gap: '20px' }}>
+        <nav style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
           <a href="/dashboard" style={{ color: 'white', textDecoration: 'none' }}>Dashboard</a>
-          <a href="/catalog" style={{ color: 'white', textDecoration: 'none' }}>Catalog</a>
-          <a href="/conversations" style={{ color: 'white', textDecoration: 'none' }}>Conversations</a>
+          <a href="/pricing" style={{ color: 'white', textDecoration: 'none' }}>Pricing</a>
+          <a href="/login" style={{ color: 'white', textDecoration: 'none' }}>Login</a>
         </nav>
       </header>
 
@@ -20,11 +20,11 @@ export default function Home() {
         </p>
 
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="/dashboard" style={{ background: '#15803d', color: 'white', padding: '14px 28px', borderRadius: '8px', textDecoration: 'none', fontSize: '18px' }}>
-            Open Dashboard
+          <a href="/register" style={{ background: '#15803d', color: 'white', padding: '14px 28px', borderRadius: '8px', textDecoration: 'none', fontSize: '18px' }}>
+            Start Free Trial
           </a>
-          <a href="/catalog" style={{ background: '#f0fdf4', color: '#15803d', padding: '14px 28px', borderRadius: '8px', textDecoration: 'none', fontSize: '18px', border: '1px solid #15803d' }}>
-            View Catalog
+          <a href="/dashboard" style={{ background: '#f0fdf4', color: '#15803d', padding: '14px 28px', borderRadius: '8px', textDecoration: 'none', fontSize: '18px', border: '1px solid #15803d' }}>
+            View Demo
           </a>
         </div>
 
@@ -41,6 +41,16 @@ export default function Home() {
             <h3>Salla / Zid Ready</h3>
             <p style={{ color: '#555' }}>Architecture prepared for Saudi e-commerce platforms and local payments.</p>
           </div>
+        </div>
+
+        <div style={{ marginTop: '60px', display: 'flex', gap: '24px', justifyContent: 'center', flexWrap: 'wrap', fontSize: '14px' }}>
+          <a href="/catalog" style={{ color: '#15803d' }}>Catalog</a>
+          <a href="/conversations" style={{ color: '#15803d' }}>Conversations</a>
+          <a href="/orders" style={{ color: '#15803d' }}>Orders</a>
+          <a href="/settings" style={{ color: '#15803d' }}>AI Settings</a>
+          <a href="/team" style={{ color: '#15803d' }}>Team</a>
+          <a href="/integrations" style={{ color: '#15803d' }}>Integrations</a>
+          <a href="/privacy" style={{ color: '#15803d' }}>Privacy</a>
         </div>
       </main>
     </div>
